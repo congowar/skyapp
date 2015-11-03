@@ -1,0 +1,81 @@
+// List 
+
+.list {
+	margin-bottom: 30px;
+
+	&-feature {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+
+		li {
+			line-height: 3.6em;
+			@include add-border(1px, #cccccc, bottom);
+
+			&:last-child {
+				border: none;
+			}
+		}
+
+		span {
+			vertical-align: top;
+			padding-top: 12px;
+			font-size: 120%;
+		}
+
+		i {
+			margin-top: -9px;
+			margin-right: 5px;
+		}
+	}
+}
+
+.fa-2 {
+	font-size: 18px;
+}
+
+.fa-3 {
+	font-size: 24px;
+}
+
+.fa-4 {
+	font-size: 27px;
+}
+
+.fa-5 {
+	font-size: 35px;
+}
+
+.fa-6 {
+	font-size: 40px;
+}
+
+.fa-primary {
+	color: $primary-color;
+}
+
+.fa-border {
+	@include add-border(1px, $primary-color, all);
+	@include border-radius(5px);
+	padding: 13px 0;
+	width: 70px;
+	margin-bottom: 14px;
+}
+
+// Headings
+
+.header-primary {
+	color: $primary-color;
+}
+
+.header-secondary {
+	color: $secondary-color;
+}
+
+.header-light {
+	color: $light-color;
+}
+
+.header-dark {
+	color: $dark-color;
+}

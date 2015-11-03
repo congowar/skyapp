@@ -1,0 +1,57 @@
+// Mixins
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+		 -o-border-radius: $radius;
+}
+
+@mixin add-border($size, $color, $position) {
+	@if $position == 'all' {
+		border: $size solid $color;
+
+	} @else if $position == 'top' {
+		border-top: $size solid $color;
+
+	} @else if $position == 'right' {
+		border-right: $size solid $color;
+
+	} @else if $position == 'bottom' {
+		border-bottom: $size solid $color; 
+
+	} @else if $position == 'left' {
+		border-left: $size solid $color; 
+
+	} @else if $position == 'top-bottom' {
+		border-top: $size solid $color;
+		border-bottom: $size solid $color;
+
+	} @else if $position == 'left-right' {
+		border-left: $size solid $color;
+		border-right: $size solid $color; 
+	}
+}
+
+@mixin add-background($color) {
+	background: $color;
+	@if $color == $light-color{
+		color: #666666;
+	} @else {
+		color: #ffffff;
+	}
+}
+
+@mixin add-box-shadow($type, $xpos, $ypos, $blur, $spread, $color) {
+	@if $type == 'inset' {
+	-webkit-box-shadow: inset $xpos $ypos $blur $spread $color;
+	   -moz-box-shadow: inset $xpos $ypos $blur $spread $color;
+		 -o-box-shadow: inset $xpos $ypos $blur $spread $color;
+		 	box-shadow: inset $xpos $ypos $blur $spread $color;
+	} @else {
+	-webkit-box-shadow: $xpos $ypos $blur $spread $color;
+	   -moz-box-shadow: $xpos $ypos $blur $spread $color;
+		 -o-box-shadow: $xpos $ypos $blur $spread $color;
+		 	box-shadow: $xpos $ypos $blur $spread $color;
+	}
+
+}

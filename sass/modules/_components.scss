@@ -1,0 +1,10 @@
+// Components 
+
+.carousel {
+	margin-bottom: 20px;
+
+	img {
+		padding: 3px;
+		@include add-border(1px, #cccccc, all);
+	}
+}

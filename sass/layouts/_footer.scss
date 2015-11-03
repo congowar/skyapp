@@ -1,0 +1,22 @@
+// Footer
+
+.footer-main {
+	@include add-background($dark-color);
+	@include add-border(5px, $secondary-color, top);
+	min-height: 200px;
+	padding: 30px 0;
+	color: white;
+	z-index: 100;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		line-height: 1.8em;
+		list-style: none;
+
+		a {
+		color: white;
+		}
+	}
+
+}

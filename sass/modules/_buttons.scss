@@ -1,0 +1,17 @@
+// Buttons 
+
+.btn-primary {
+	@include add-background($primary-color);
+	@include add-border(2px, white, all);
+
+	&:hover {
+		background: darken($primary-color, 10%);
+		@include add-border(2px, white, all);
+	}
+
+	&:active {
+		background: darken($primary-color, 15%) !important;
+		border: 2px solid white !important;
+		@include add-box-shadow(inset, 0, 0, 5px, 2px, darken($primary-color, 20%));
+	}
+}
