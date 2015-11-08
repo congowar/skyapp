@@ -149,6 +149,16 @@ h1, h2, h3, h4, h5 {
   text-align: center !important;
 }
 
+/* line 37, ../sass/modules/_blocks.scss */
+.block-image img {
+  width: 100%;
+}
+
+/* line 41, ../sass/modules/_blocks.scss */
+.block-border {
+  border: 1px solid #cccccc;
+}
+
 /* line 3, ../sass/modules/_buttons.scss */
 .btn-primary {
   background: #00aff0;
@@ -178,6 +188,35 @@ h1, h2, h3, h4, h5 {
 .carousel img {
   padding: 3px;
   border: 1px solid #cccccc;
+}
+
+/* line 14, ../sass/modules/_components.scss */
+.nav-tabs {
+  border: none;
+}
+
+/* line 18, ../sass/modules/_components.scss */
+.tab-primary .tab-pane,
+.tab-primary .nav-tabs > li.active > a,
+.tab-primary .nav-tabs > li.active > a:hover,
+.tab-primary .nav-tabs > li.active > a:focus {
+  background: #00aff0;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #00aff0;
+}
+
+/* line 26, ../sass/modules/_components.scss */
+.tab-pane {
+  padding: 10px 10px 20px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* line 31, ../sass/modules/_components.scss */
+.tab-header {
+  margin-top: 12px;
 }
 
 /* line 3, ../sass/modules/_sections.scss */
@@ -307,22 +346,62 @@ section {
 }
 
 /* line 67, ../sass/modules/_typography.scss */
-.header-primary {
+.header-primary, .header-primary-a {
   color: #00aff0;
 }
 
 /* line 71, ../sass/modules/_typography.scss */
-.header-secondary {
+.header-primary-a {
+  border-bottom: 2px solid #00aff0;
+}
+
+/* line 76, ../sass/modules/_typography.scss */
+.header-secondary, .header-secondary-a {
   color: #7fba00;
 }
 
-/* line 75, ../sass/modules/_typography.scss */
-.header-light {
+/* line 80, ../sass/modules/_typography.scss */
+.header-secondary-a {
+  border-bottom: 2px solid #7fba00;
+}
+
+/* line 85, ../sass/modules/_typography.scss */
+.header-light, .header-light-a {
   color: #e4eef2;
 }
 
-/* line 79, ../sass/modules/_typography.scss */
-.header-dark {
+/* line 89, ../sass/modules/_typography.scss */
+.header-light-a {
+  border-bottom: 2px solid #e4eef2;
+}
+
+/* line 94, ../sass/modules/_typography.scss */
+.header-dark, .header-dark-a {
+  color: #333;
+}
+
+/* line 98, ../sass/modules/_typography.scss */
+.header-dark-a {
+  border-bottom: 2px solid #333;
+}
+
+/* line 105, ../sass/modules/_typography.scss */
+.em-primary {
+  color: #00aff0;
+}
+
+/* line 109, ../sass/modules/_typography.scss */
+.em-secondary {
+  color: #7fba00;
+}
+
+/* line 113, ../sass/modules/_typography.scss */
+.em-light {
+  color: #e4eef2;
+}
+
+/* line 117, ../sass/modules/_typography.scss */
+.em-dark {
   color: #333;
 }
 

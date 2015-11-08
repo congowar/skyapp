@@ -8,3 +8,26 @@
 		@include add-border(1px, #cccccc, all);
 	}
 }
+
+//Tabs
+
+.nav-tabs {
+  border: none;
+}
+
+.tab-primary .tab-pane,
+.tab-primary .nav-tabs > li.active > a,
+.tab-primary .nav-tabs > li.active > a:hover,
+.tab-primary .nav-tabs > li.active > a:focus {
+  @include add-background($primary-color);
+  border: none;
+  @include add-border(1px, $primary-color, bottom);
+}
+.tab-pane {
+  padding: 10px 10px 20px 10px;
+  @include border-radius(5px);
+}
+
+.tab-header {
+  margin-top: 12px;
+}

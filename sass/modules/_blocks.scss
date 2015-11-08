@@ -33,3 +33,11 @@
 .block-center {
 	text-align: center !important;
 }
+
+.block-image img {
+	width: 100%;
+}
+
+.block-border {
+  @include add-border(1px, #cccccc, all);
+}

@@ -65,17 +65,55 @@
 // Headings
 
 .header-primary {
-	color: $primary-color;
+  color: $primary-color;
+}
+
+.header-primary-a {
+	@extend .header-primary;
+  	@include add-border(2px, $primary-color, bottom);
 }
 
 .header-secondary {
 	color: $secondary-color;
 }
 
+.header-secondary-a {
+  @extend .header-secondary;
+  @include add-border(2px, $secondary-color, bottom);
+}
+
 .header-light {
 	color: $light-color;
 }
 
+.header-light-a {
+  @extend .header-light;
+  @include add-border(2px, $light-color, bottom);
+}
+
 .header-dark {
 	color: $dark-color;
+}
+
+.header-dark-a {
+  @extend .header-dark;
+  @include add-border(2px, $dark-color, bottom);
+}
+
+//Emphasis Text
+
+.em-primary {
+  color: $primary-color;
+}
+
+.em-secondary {
+  color: $secondary-color;
+}
+
+.em-light {
+  color: $light-color;
+}
+
+.em-dark {
+  color: $dark-color;
 }
