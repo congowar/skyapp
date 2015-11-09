@@ -41,3 +41,36 @@
 .block-border {
   @include add-border(1px, #cccccc, all);
 }
+
+.block-primary-head  {
+	h3 {
+		padding: 15px 5px 15px 10px;
+		@include add-background($primary-color);
+		margin: 0;
+		font-size: 18px;
+	}
+
+	.block-content {
+		@include add-border(1px, $primary-color, all);
+		padding: 10px;
+	}
+
+}
+
+.block-icon {
+	h3 {
+		padding: 0;
+		margin: 0;
+ 	}
+
+ 	.icon {
+ 		float: left;
+ 		width: 20%;
+ 		margin-top: 10px;
+ 	}
+
+ 	.iocn-content {
+ 		float: left;
+ 		width: 70%;
+ 	}
+}
