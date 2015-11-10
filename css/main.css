@@ -268,11 +268,6 @@ h1, h2, h3, h4, h5 {
   border: 1px solid #cccccc;
 }
 
-/* line 14, ../sass/modules/_components.scss */
-.nav-tabs {
-  border: none;
-}
-
 /* line 18, ../sass/modules/_components.scss */
 .tab-primary .tab-pane,
 .tab-primary .nav-tabs > li.active > a,
@@ -280,11 +275,36 @@ h1, h2, h3, h4, h5 {
 .tab-primary .nav-tabs > li.active > a:focus {
   background: #00aff0;
   color: #ffffff;
-  border: none;
-  border-bottom: 1px solid #00aff0;
 }
 
-/* line 26, ../sass/modules/_components.scss */
+/* line 25, ../sass/modules/_components.scss */
+.tab-secondary .tab-pane,
+.tab-secondary .nav-tabs > li.active > a,
+.tab-secondary .nav-tabs > li.active > a:hover,
+.tab-secondary .nav-tabs > li.active > a:focus {
+  background: #7fba00;
+  color: #ffffff;
+}
+
+/* line 32, ../sass/modules/_components.scss */
+.tab-light .tab-pane,
+.tab-light .nav-tabs > li.active > a,
+.tab-light .nav-tabs > li.active > a:hover,
+.tab-light .nav-tabs > li.active > a:focus {
+  background: #e4eef2;
+  color: #666666;
+}
+
+/* line 39, ../sass/modules/_components.scss */
+.tab-dark .tab-pane,
+.tab-dark .nav-tabs > li.active > a,
+.tab-dark .nav-tabs > li.active > a:hover,
+.tab-dark .nav-tabs > li.active > a:focus {
+  background: #333;
+  color: #ffffff;
+}
+
+/* line 46, ../sass/modules/_components.scss */
 .tab-pane {
   padding: 10px 10px 20px 10px;
   -webkit-border-radius: 5px;
@@ -292,7 +312,7 @@ h1, h2, h3, h4, h5 {
   -o-border-radius: 5px;
 }
 
-/* line 31, ../sass/modules/_components.scss */
+/* line 51, ../sass/modules/_components.scss */
 .tab-header {
   margin-top: 12px;
 }
@@ -383,36 +403,57 @@ section {
 }
 
 /* line 33, ../sass/modules/_typography.scss */
+.list-comments {
+  margin: 0;
+  padding: 0;
+}
+/* line 37, ../sass/modules/_typography.scss */
+.list-comments li {
+  padding: 12px 0 5px 0;
+  border-bottom: 1px solid #cccccc;
+  min-height: 120px;
+}
+/* line 43, ../sass/modules/_typography.scss */
+.list-comments li:last-child {
+  border: none;
+}
+/* line 47, ../sass/modules/_typography.scss */
+.list-comments img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+/* line 53, ../sass/modules/_typography.scss */
 .fa-2 {
   font-size: 18px;
 }
 
-/* line 37, ../sass/modules/_typography.scss */
+/* line 57, ../sass/modules/_typography.scss */
 .fa-3 {
   font-size: 24px;
 }
 
-/* line 41, ../sass/modules/_typography.scss */
+/* line 61, ../sass/modules/_typography.scss */
 .fa-4 {
   font-size: 27px;
 }
 
-/* line 45, ../sass/modules/_typography.scss */
+/* line 65, ../sass/modules/_typography.scss */
 .fa-5 {
   font-size: 35px;
 }
 
-/* line 49, ../sass/modules/_typography.scss */
+/* line 69, ../sass/modules/_typography.scss */
 .fa-6 {
   font-size: 40px;
 }
 
-/* line 53, ../sass/modules/_typography.scss */
+/* line 73, ../sass/modules/_typography.scss */
 .fa-primary {
   color: #00aff0;
 }
 
-/* line 57, ../sass/modules/_typography.scss */
+/* line 77, ../sass/modules/_typography.scss */
 .fa-border {
   border: 1px solid #00aff0;
   -webkit-border-radius: 5px;
@@ -423,62 +464,62 @@ section {
   margin-bottom: 14px;
 }
 
-/* line 67, ../sass/modules/_typography.scss */
+/* line 87, ../sass/modules/_typography.scss */
 .header-primary, .header-primary-a {
   color: #00aff0;
 }
 
-/* line 71, ../sass/modules/_typography.scss */
+/* line 91, ../sass/modules/_typography.scss */
 .header-primary-a {
   border-bottom: 2px solid #00aff0;
 }
 
-/* line 76, ../sass/modules/_typography.scss */
+/* line 96, ../sass/modules/_typography.scss */
 .header-secondary, .header-secondary-a {
   color: #7fba00;
 }
 
-/* line 80, ../sass/modules/_typography.scss */
+/* line 100, ../sass/modules/_typography.scss */
 .header-secondary-a {
   border-bottom: 2px solid #7fba00;
 }
 
-/* line 85, ../sass/modules/_typography.scss */
+/* line 105, ../sass/modules/_typography.scss */
 .header-light, .header-light-a {
   color: #e4eef2;
 }
 
-/* line 89, ../sass/modules/_typography.scss */
+/* line 109, ../sass/modules/_typography.scss */
 .header-light-a {
   border-bottom: 2px solid #e4eef2;
 }
 
-/* line 94, ../sass/modules/_typography.scss */
+/* line 114, ../sass/modules/_typography.scss */
 .header-dark, .header-dark-a {
   color: #333;
 }
 
-/* line 98, ../sass/modules/_typography.scss */
+/* line 118, ../sass/modules/_typography.scss */
 .header-dark-a {
   border-bottom: 2px solid #333;
 }
 
-/* line 105, ../sass/modules/_typography.scss */
+/* line 125, ../sass/modules/_typography.scss */
 .em-primary {
   color: #00aff0;
 }
 
-/* line 109, ../sass/modules/_typography.scss */
+/* line 129, ../sass/modules/_typography.scss */
 .em-secondary {
   color: #7fba00;
 }
 
-/* line 113, ../sass/modules/_typography.scss */
+/* line 133, ../sass/modules/_typography.scss */
 .em-light {
   color: #e4eef2;
 }
 
-/* line 117, ../sass/modules/_typography.scss */
+/* line 137, ../sass/modules/_typography.scss */
 .em-dark {
   color: #333;
 }
@@ -509,4 +550,56 @@ section {
   padding: 0;
   vertical-align: top;
   margin-left: -4px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 3, ../sass/responsive/_responsive.scss */
+  .search {
+    text-align: center;
+  }
+
+  /* line 7, ../sass/responsive/_responsive.scss */
+  .btn {
+    width: 100%;
+  }
+
+  /* line 12, ../sass/responsive/_responsive.scss */
+  .list li {
+    text-align: center;
+  }
+
+  /* line 17, ../sass/responsive/_responsive.scss */
+  .page-header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  /* line 23, ../sass/responsive/_responsive.scss */
+  img.device-small {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%;
+  }
+
+  /* line 31, ../sass/responsive/_responsive.scss */
+  footer ul {
+    text-align: center;
+  }
+  /* line 34, ../sass/responsive/_responsive.scss */
+  footer h4 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 42, ../sass/responsive/_responsive.scss */
+  .section-showcase h1 {
+    margin-top: -50px;
+  }
+
+  /* line 46, ../sass/responsive/_responsive.scss */
+  .downloads img {
+    margin-bottom: 10px;
+  }
 }

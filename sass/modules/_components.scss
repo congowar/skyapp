@@ -12,7 +12,7 @@
 //Tabs
 
 .nav-tabs {
-  border: none;
+  // border: none;
 }
 
 .tab-primary .tab-pane,
@@ -20,9 +20,29 @@
 .tab-primary .nav-tabs > li.active > a:hover,
 .tab-primary .nav-tabs > li.active > a:focus {
   @include add-background($primary-color);
-  border: none;
-  @include add-border(1px, $primary-color, bottom);
 }
+
+.tab-secondary .tab-pane,
+.tab-secondary .nav-tabs > li.active > a,
+.tab-secondary .nav-tabs > li.active > a:hover,
+.tab-secondary .nav-tabs > li.active > a:focus {
+  @include add-background($secondary-color);
+}
+
+.tab-light .tab-pane,
+.tab-light .nav-tabs > li.active > a,
+.tab-light .nav-tabs > li.active > a:hover,
+.tab-light .nav-tabs > li.active > a:focus {
+  @include add-background($light-color);
+}
+
+.tab-dark .tab-pane,
+.tab-dark .nav-tabs > li.active > a,
+.tab-dark .nav-tabs > li.active > a:hover,
+.tab-dark .nav-tabs > li.active > a:focus {
+  @include add-background($dark-color);
+}
+
 .tab-pane {
   padding: 10px 10px 20px 10px;
   @include border-radius(5px);
